@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bloom Rush — a garden-defense arcade</title>
+<style>
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: #160a2e;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Trebuchet MS, Verdana, sans-serif;
+  }
+  #wrap {
+    width: min(1280px, 100vw);
+    aspect-ratio: 1280 / 800;
+    max-height: 100vh;
+  }
+  canvas {
+    display: block;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    border-radius: 6px;
+    box-shadow: 0 0 60px rgba(255, 140, 90, 0.25);
+  }
+</style>
+</head>
+<body>
+<div id="wrap">
+  <canvas id="game" width="1280" height="800"></canvas>
+</div>
+<script type="module" src="./src/main.js"></script>
+</body>
+</html>
